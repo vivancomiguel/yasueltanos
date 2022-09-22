@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <!-- Declarar un grid (tabla) -->
@@ -33,31 +34,55 @@
         <div class="col border col-8 border-1">col-8</div>
         <div class="col border col-2 border-1">col-2</div>
       </div>
-      <!-- Columnas identicas y una desigual con breakpoint, es decir que hasta cierta altura se vuelve en tres columnas identicas -->
-      <div class="container text-center my-5">
-        <div class="row">
-          <div class="col-md-2 border border-primary">col-2</div>
-          <div class="col-md-8 border border-secondary">col-8</div>
-          <div class="col-md-2 border border-danger">col-2</div>
-        </div>
+    </div>
+    <!-- Columnas identicas y una desigual con breakpoint, es decir que hasta cierta altura se vuelve en tres columnas identicas -->
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-md-2 border border-primary">col-2</div>
+        <div class="col-md-8 border border-secondary">col-8</div>
+        <div class="col-md-2 border border-danger">col-2</div>
       </div>
-      <!-- Columnas identicas y una desigual dos breakpoint -->
-      <div class="container text-center my-5">
-        <div class="row">
-          <div class="col-md-2 col-sm-4 border border-primary">col-2 col-sm-4</div>
-          <div class="col-md-8 col-sm-8 border border-secondary">col-8 col-sm-8</div>
-          <div class="col-md-2 col-sm-12 border border-danger">col-2 col-sm-12</div>
-        </div>
+    </div>
+    <!-- Columnas identicas y una desigual dos breakpoint -->
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-md-2 col-sm-4 border border-primary">col-2 col-sm-4</div>
+        <div class="col-md-8 col-sm-8 border border-secondary">col-8 col-sm-8</div>
+        <div class="col-md-2 col-sm-12 border border-danger">col-2 col-sm-12</div>
       </div>
-      <!-- Ejemplo con lorem -->
-      <div class="container text-center my-5">
-        <div class="row">
-          <div class="col-md-2 col-sm-4 border border-primary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa rerum ducimus voluptatem est vero rem libero, ipsa ex, explicabo dolor et iste repudiandae, minima obcaecati! Soluta suscipit recusandae velit perspiciatis?</div>
-          <div class="col-md-8 col-sm-8 border border-secondary">Quia quos, enim, illum optio repudiandae distinctio quod magnam possimus reprehenderit quis incidunt harum aliquid facilis. Vel, magni porro commodi ratione fuga ut iusto delectus modi unde laudantium facere impedit!</div>
-          <div class="col-md-2 col-sm-12 border border-danger">Consectetur beatae expedita quibusdam, tenetur praesentium error voluptatum alias, repellat aliquid ut excepturi nulla. Molestias, ad quasi! Eligendi consequatur porro ipsam fugiat asperiores eaque atque dolore, perferendis, id deserunt impedit.</div>
-        </div>
+    </div>
+    <!-- align self = coloca los elementos ordenados -->
+    <!-- Columnas identicas y una desigual dos breakpoint con minimo de altura-->
+    <div class="container text-center my-5">
+      <div class="row altura-min">
+        <div class="col-md-2 col-sm-4 align-self-start border border-primary altura-col">col-2 col-sm-4</div>
+        <div class="col-md-8 col-sm-8 align-self-center border border-secondary altura-col">col-8 col-sm-8</div>
+        <div class="col-md-2 col-sm-12 align-self-end border border-danger altura-col">col-2 col-sm-12</div>
+      </div>
+    </div>
+    <!-- justify-content-center = alinea al centro. justify-content-end = lo envia al final -->
+    <!-- Columnas sin completar 12 y alineadas-->
+    <div class="container-fluid text-center my-5">
+      <div class="row justify-content-end">
+        <div class="col-md-2 border border-primary">col-2</div>
+        <div class="col-md-6 border border-secondary">col-8</div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- Grid complejo-->
+    <div class="container text-center my-5">
+      <div class="row">
+        <div class="col-md-6 border border-primary">
+          <div class="row">
+            <div class="col-md-12 border border-secondary">col</div>
+            <div class="col-md-12 border border-secondary">col</div>
+          </div>
+        </div>
+        <div class="col-md-3 border border-secondary">col-3</div>
+        <div class="col-md-3 border border-secondary">col-3</div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <!-- Ctrl + K Ctrl + 0 = Contrae todo. Ctrl + K Ctrl + J = Descontrae todo. Ctrl + K Ctrl + (numero) = Contrae todo con excepcion del numero del nivel -->
   </body>
 </html>
